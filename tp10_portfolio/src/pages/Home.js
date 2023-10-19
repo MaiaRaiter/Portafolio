@@ -1,0 +1,1 @@
+//- En la Home, deberemos ver 6 creaciones, que podrian ser los "más destacados", elegidas por ustedes, y que pueda hacer click en alguno, y me permita agregarlo a favoritos.
