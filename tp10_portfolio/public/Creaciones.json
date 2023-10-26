@@ -1,65 +1,77 @@
-{
-    "objetos": [
+
+[
+  
+
       {
-        "titulo": "Objeto 1",
-        "descripcion": "Esta es la descripción del objeto 1.",
-        "imagenes": [""],
+        "id": "0",
+        "titulo": "A Bailar",
+        "descripcion": "Siento que el calor empieza a subir La musica te atrapa y no te puedes ir...",
+        "imagenes": ["../images/A_Bailar.jpg"],
         "fecha": "2023-10-24"
       },
       {
+        "id": "1",
         "titulo": "Objeto 2",
         "descripcion": "Esta es la descripción del objeto 2.",
         "imagenes": [""],
         "fecha": "2023-10-25"
       },
       {
+        "id": "2",
         "titulo": "Objeto 3",
         "descripcion": "Esta es la descripción del objeto 3.",
         "imagenes": [""],
         "fecha": "2023-10-26"
       },
       {
+        "id": "3",
         "titulo": "Objeto 4",
         "descripcion": "Esta es la descripción del objeto 4.",
         "imagenes": [""],
         "fecha": "2023-10-27"
       },
       {
+        "id": "4",
         "titulo": "Objeto 5",
         "descripcion": "Esta es la descripción del objeto 5.",
         "imagenes": [""],
         "fecha": "2023-10-28"
       },
       {
+        "id": "5",
         "titulo": "Objeto 6",
         "descripcion": "Esta es la descripción del objeto 6.",
         "imagenes": [""],
         "fecha": "2023-10-29"
       },
       {
+        "id": "6",
         "titulo": "Objeto 7",
         "descripcion": "Esta es la descripción del objeto 7.",
         "imagenes": [""],
         "fecha": "2023-10-30"
       },
       {
+        "id": "7",
         "titulo": "Objeto 8",
         "descripcion": "Esta es la descripción del objeto 8.",
         "imagenes": [""],
         "fecha": "2023-10-31"
       },
       {
+        "id": "8",
         "titulo": "Objeto 9",
         "descripcion": "Esta es la descripción del objeto 9.",
         "imagenes": [""],
         "fecha": "2023-11-01"
       },
       {
+        "id": "9",
         "titulo": "Objeto 10",
         "descripcion": "Esta es la descripción del objeto 10.",
         "imagenes": [""],
         "fecha": "2023-11-02"
       }
-    ]
-  }
+]
+  
   
