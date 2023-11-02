@@ -1,6 +1,10 @@
 import React, {useContext} from 'react'
 import { FavoritosContext } from '../context/FavoritosContext'
+<<<<<<< HEAD
 import { BiHeart } from 'react-icons/bi'
+=======
+
+>>>>>>> ca1c3e720689becd312ed4db9f538bb8c01bbf6a
 
 export default function Card({post}) {
   const { AddFavorito }= useContext(FavoritosContext);
