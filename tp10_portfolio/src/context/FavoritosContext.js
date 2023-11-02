@@ -26,7 +26,7 @@ const FavoritosProvider = (props) => {
       setFavoritos([])
     }
 
-    const EliminarFavotito = (favoritoid) => {
+    const EliminarFavorito = (favoritoid) => {
       setFavoritos(
         favoritos.filter((fav) => fav.id !== favoritoid)
       ); 
@@ -39,7 +39,7 @@ const FavoritosProvider = (props) => {
       cantidadFavoritos,
       AddFavorito,
       ResetFavoritos,
-      EliminarFavotito
+      EliminarFavorito
     }}
   >
     {props.children}

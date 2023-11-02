@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import { FavoritosContext } from '../context/FavoritosContext'
-import { IoHeartOutline } from "react-icons/io5";
+import { BiHeart } from 'react-icons/bi'
 
 export default function Card({post}) {
   const { AddFavorito }= useContext(FavoritosContext);
@@ -14,8 +14,9 @@ export default function Card({post}) {
                     <p>{post.descripcion}</p>
                     <p>{post.fecha}</p>
                 </div>
+                <BiHeart className='icon-heart' onClick={() => AddFavorito(post)}/>
                 <img className="img-fluid" src={post.imagenes} />
-                <div  className="IoHeartOutline"><button onClick={() => AddFavorito(post)} className="IoHeartOutline">Add Favorito</button></div>
+                
             </div>
         </div>
     </div>
