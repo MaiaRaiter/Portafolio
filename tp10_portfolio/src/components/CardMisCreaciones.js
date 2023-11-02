@@ -5,8 +5,10 @@ import DetallesMisCreaciones from '../pages/DetallesMisCreaciones';
 export const CardMisCreaciones = ({post}) => {
   return (
     <div class="card shadow border-0 rounded-4 mb-5">
-    <Link to={`/DetallesMisCreaciones/${post.id}`}  >  
-        <DetallesMisCreaciones creacion={post}> </DetallesMisCreaciones>
+    <Link to={`/DetallesMisCreaciones/${post.id}`}  >          
+        <div className="text-center mb-5">
+            <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">{post.titulo}</span></h1>
+        </div>  
         <div class="card-body p-5"> 
             <div class="row align-items-center gx-5">
                 <div class="col text-center text-lg-start mb-4 mb-lg-0">

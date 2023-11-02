@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import { FavoritosContext } from '../context/FavoritosContext'
-import { IoHeartOutline } from "react-icons/io5";
+
 
 export default function Card({post}) {
   const { AddFavorito }= useContext(FavoritosContext);

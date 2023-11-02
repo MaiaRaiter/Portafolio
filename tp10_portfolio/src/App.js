@@ -6,10 +6,12 @@ import MisCreaciones from '../src/pages/MisCreaciones';
 import Favoritos from '../src/pages/Favoritos';
 import Layout from './pages/Layout';
 import FavoritosProvider from './context/FavoritosContext';
+import CancionesProvider from './context/CancionesContext';
 
 
 function App() {
   return (
+    <CancionesProvider>
    <FavoritosProvider>
    <Routes>
       <Route path="/" element={<Layout />}>
@@ -21,7 +23,8 @@ function App() {
       </Route>
    </Routes>
 
-   </FavoritosProvider>  
+   </FavoritosProvider>
+   </CancionesProvider>  
   );
 }
 
