@@ -9,7 +9,6 @@ export default function Home() {
 
   const [post, setPost] = useState([]);
 
-
   useEffect(() => {
     axios.get("Creaciones.json")
       .then((result) => {

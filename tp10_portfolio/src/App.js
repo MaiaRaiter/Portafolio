@@ -5,11 +5,12 @@ import DetallesMisCreaciones from '../src/pages/DetallesMisCreaciones';
 import MisCreaciones from '../src/pages/MisCreaciones';
 import Favoritos from '../src/pages/Favoritos';
 import Layout from './pages/Layout';
+import FavoritosProvider from './context/FavoritosContext';
 
 
 function App() {
   return (
-   <>
+   <FavoritosProvider>
    <Routes>
       <Route path="/" element={<Layout />}>
         <Route path='/' element={<Home />}> </Route>
@@ -20,7 +21,7 @@ function App() {
       </Route>
    </Routes>
 
-   </>  
+   </FavoritosProvider>  
   );
 }
 
