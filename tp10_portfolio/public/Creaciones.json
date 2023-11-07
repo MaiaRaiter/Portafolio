@@ -2,6 +2,7 @@
 [
   
 
+<<<<<<< HEAD
   {
     "id": "0",
     "titulo": "Lali",
@@ -12,68 +13,97 @@
     "imagenes": ["../images/A_Bailar.jpg"],
     "fecha": "13 de abril de 2023"
   },
+=======
+      {
+        "id": "0",
+        "titulo": "Lali",
+        "descripcion": " Lali es el quinto álbum de estudio de la cantante argentina. ",
+        "detalles":"Al 100% le gustó este álbum",
+        "informacion": "Lali, lanzado mundialmente el 13 de abril de 2023 a través de Sony Music Argentina.​​Para su grabación, la autora trabajó principalmente en conjunto con Mauro de Tommaso y Martín D’Agosto.",
+        "genero": "Géneros: Pop, Dance, Dance/electrónica, Hyperpop",
+        "imagenes": ["../images/lali.jpg"],
+        "fecha": "13 de abril de 2023"
+      },
+>>>>>>> d07f9e2970e5cddf7320ff4dd1a799c3668f5f37
       {
         "id": "1",
-        "titulo": "Objeto 2",
-        "descripcion": "Esta es la descripción del objeto 2.",
-        "imagenes": [""],
-        "fecha": "2023-10-25"
+        "titulo": "Libra",
+        "descripcion": "Libra es el cuarto álbum de estudio de la actriz y cantante argentina Lali.",
+        "detalles":"Al 97% le gustó este álbum",
+        "informacion":"Precisamente, Libra encuentra a Lali buscando el equilibrio entre su característico sonido pop, que ella define como su esencia, y estos nuevos elementos urbanos que lleva incorporando a su música desde Brava.2​ En este álbum, están incluidas las participaciones de CNCO, Cazzu, Mau & Ricky y Noriel.",
+        "genero":"Genero: hip hop, trap, R&B, reguetón y pop urbano",
+        "imagenes": ["../images/libra.jpg"],
+        "fecha": "2 de noviembre de 2020"
       },
       {
         "id": "2",
-        "titulo": "Objeto 3",
-        "descripcion": "Esta es la descripción del objeto 3.",
-        "imagenes": [""],
-        "fecha": "2023-10-26"
+        "titulo": "Brava",
+        "descripcion": "Brava es el tercer álbum de estudio de la cantante y compositora argentina.",
+        "detalles":"Al 96% le gustó este álbum",
+        "informacion":"Asimismo, el álbum incluye colaboraciones con Abraham Mateo, A. Chal, Pabllo Vittar, Mau y Ricky y Reik.",
+        "genero":"Genero: pop latino con elementos de reguetón, urban y trap latino ",
+        "imagenes": ["../images/brava.jpg"],
+        "fecha": "28 de julio de 2017"
       },
       {
         "id": "3",
-        "titulo": "Objeto 4",
-        "descripcion": "Esta es la descripción del objeto 4.",
-        "imagenes": [""],
-        "fecha": "2023-10-27"
+        "titulo": "Soy",
+        "descripcion": "Soy es el segundo álbum de estudio de la actriz y cantante argentina Lali.",
+        "detalles":"Al 94% le gustó este álbum",
+        "informacion":"Soy alcanzó el segundo puesto en las listas de iTunes de países como Argentina, Colombia, Perú e Israel, imposibilitado de alcanzar el número uno por Dangerous Woman de Ariana Grande.",
+        "genero":"Genero: Pop, Dance pop, Dubstep, R&B contemporáneo",
+        "imagenes": ["../images/soy.jpg"],
+        "fecha": "20 de mayo de 2016"
       },
       {
         "id": "4",
-        "titulo": "Objeto 5",
-        "descripcion": "Esta es la descripción del objeto 5.",
-        "imagenes": [""],
-        "fecha": "2023-10-28"
+        "titulo": "A Bailar",
+        "descripcion": "A Bailar es el álbum debut de estudio de la cantante argentina Lali",
+        "detalles":"Al 96% le gustó este álbum",
+        "informacion":"El álbum alcanzó el puesto número 5 en Argentina, donde fue certificado oro por la Cámara Argentina de Productores de Fonogramas y Videogramas.",
+        "genero":"Géneros: Pop, Dance pop, Pop latino, Hip hop, Dubstep, Electropop",
+        "imagenes": ["../images/abailar.jpg"],
+        "fecha": "21 de marzo de 2014"
       },
       {
         "id": "5",
-        "titulo": "Objeto 6",
-        "descripcion": "Esta es la descripción del objeto 6.",
-        "imagenes": [""],
-        "fecha": "2023-10-29"
+        "titulo": "Esperanza Mia",
+        "descripcion": "Esperanza mía es la banda sonora de la telenovela argentina homónima de 2015",
+        "detalles":"Al 97% le gustó este álbum",
+        "informacion":"El disco contiene un total de 11 canciones originales interpretadas mayormente por Lali Espósito, a excepción de «Lo juro por Dios», interpretada por el cantante mexicano Carlos Rivera, y «Hacia adelante», interpretada por la actriz argentina Ángela Torres.",
+        "genero":"En cuanto a su recepción comercial, el álbum debutó y alcanzó el primer puesto en Argentina y Uruguay, y recibió una certificación de platino por la Cámara Argentina de Productores de Fonogramas y Videogramas (CAPIF), tras vender 40 000 copias",
+        "imagenes": ["../images/esperanzamia.jpg"],
+        "fecha": "21 de mayo de 2015"
       },
       {
         "id": "6",
-        "titulo": "Objeto 7",
-        "descripcion": "Esta es la descripción del objeto 7.",
-        "imagenes": [""],
-        "fecha": "2023-10-30"
+        "titulo": "Ladron",
+        "descripcion": "Ladron es el tercer álbum de estudio de la cantante y compositora argentina.",
+        "detalles":"Al 96% le gustó este álbum",
+        "informacion":"Asimismo, el álbum incluye colaboraciones con Abraham Mateo.",
+        "genero":"Genero: pop latino con elementos de reguetón, urban y trap latino ",
+        "imagenes": ["../images/ladron.jpg"],
+        "fecha": "el 28 de julio de 2017"
       },
       {
         "id": "7",
-        "titulo": "Objeto 8",
-        "descripcion": "Esta es la descripción del objeto 8.",
-        "imagenes": [""],
-        "fecha": "2023-10-31"
+        "titulo": "Fascinada",
+        "descripcion": "Fascinada es el tercer álbum de estudio de la cantante y compositora argentina.",
+        "detalles":"Al 96% le gustó este álbum",
+        "informacion":"Asimismo, el álbum incluye colaboraciones con Abraham Mateo, A. Chal, Pabllo Vittar, Mau y Ricky y Reik.",
+        "genero":"Genero: pop latino con elementos de reguetón, urban y trap latino ",
+        "imagenes": ["../images/Fascinada.jpg"],
+        "fecha": "el 28 de julio de 2017"
       },
       {
         "id": "8",
-        "titulo": "Objeto 9",
-        "descripcion": "Esta es la descripción del objeto 9.",
-        "imagenes": [""],
-        "fecha": "2023-11-01"
-      },
-      {
-        "id": "9",
-        "titulo": "Objeto 10",
-        "descripcion": "Esta es la descripción del objeto 10.",
-        "imagenes": [""],
-        "fecha": "2023-11-02"
+        "titulo": "Lali la ligera",
+        "descripcion": "Es el tercer álbum de estudio de la cantante y compositora argentina.",
+        "detalles":"Al 96% le gustó este álbum",
+        "informacion":"Asimismo, el álbum incluye colaboraciones con Abraham Mateo, A. Chal, Pabllo Vittar, Mau y Ricky y Reik.",
+        "genero":"Genero: pop latino con elementos de reguetón, urban y trap latino ",
+        "imagenes": ["../images/lalilaligera.jpg"],
+        "fecha": "el 28 de julio de 2017"
       }
 ]
   
