@@ -1,19 +1,5 @@
 
 [
-  
-
-<<<<<<< HEAD
-  {
-    "id": "0",
-    "titulo": "Lali",
-    "descripcion": " Lali es el quinto álbum de estudio de la cantante argentina. ",
-    "detalles":"Al 100% le gustó este álbum",
-    "informacion": "Lali, lanzado mundialmente el 13 de abril de 2023 a través de Sony Music Argentina.​​Para su grabación, la autora trabajó principalmente en conjunto con Mauro de Tommaso y Martín D’Agosto.",
-    "genero": "Géneros: Pop, Dance, Dance/electrónica, Hyperpop",
-    "imagenes": ["../images/A_Bailar.jpg"],
-    "fecha": "13 de abril de 2023"
-  },
-=======
       {
         "id": "0",
         "titulo": "Lali",
@@ -24,7 +10,7 @@
         "imagenes": ["../images/lali.jpg"],
         "fecha": "13 de abril de 2023"
       },
->>>>>>> d07f9e2970e5cddf7320ff4dd1a799c3668f5f37
+
       {
         "id": "1",
         "titulo": "Libra",
