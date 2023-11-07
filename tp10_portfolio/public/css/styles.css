@@ -90,7 +90,11 @@
     scroll-behavior: smooth;
   }
 }
-
+.img2 {
+  width: 523px;
+  height: 437px;
+  margin-right:800px;
+ }
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -111,7 +115,14 @@ hr {
   border-top: 1px solid;
   opacity: 0.25;
 }
+.FondoGris{
+ background-color: rgba(90, 86, 86, 0.507);
+ height: 200px;
+ width: auto;
+ padding: 97px;
+ 
 
+}
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
