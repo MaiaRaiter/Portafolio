@@ -29,29 +29,42 @@ return (
     <div>loading</div>) : (
       <div className="text-center mb-5">
         <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">{creation.titulo}</span></h1>
-        <img className="img2" src={creation.imagenes} alt=""/>
-        <div className='Columnas'>
-        <button type="button" class="btn btn-primary btn-lg" onClick={() => AddFavorito(creation)}> Agregar a favoritos</button>
-<button type="button" class="btn btn-secondary btn-lg"  onClick={() => EliminarFavorito(creation.id)}>Quitar de favoritos </button>
+        <div className="contenedor">
+  <img className="img2" src={creation.imagenes} alt=""/>
+  <ul className="list-group TablaInfo">
+    <li className="list-group-item">Fecha:{creation.fecha}</li>
+    <li className="list-group-item">Género:{creation.genero}</li>
+    <li className="list-group-item">Detalles:{creation.detalles}</li>
+  </ul>
 </div>
+
         <br></br> 
         <br></br>
-< div className='FondoGris'> 
+        <center>< div className='FondoGris'> 
 <p >{creation.informacion}</p>
-</div>
-<ul class="list-group">
-  <li class="list-group-item">Fecha:{creation.fecha}</li>
-  <li class="list-group-item">Género:{creation.genero}</li>
-  <li class="list-group-item">Detalles:{creation.detalles}</li>
- 
-</ul>
+</div> </center>
 
-
-
+<button type="button" className="btn btn-primary btn-lg Columnas" onClick={() => AddFavorito(creation)}> Agregar a favoritos</button>
+      <button type="button" className="btn btn-secondary btn-lg Columnas2"  onClick={() => EliminarFavorito(creation.id)}>Quitar de favoritos </button>
 
       </div>  
     )
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   </>
 )
 

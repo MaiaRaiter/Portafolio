@@ -609,13 +609,14 @@ progress {
 .img2 {
  width: 611px;
  height: 500px;
+ border-radius: 100%;
 }
 .Columnas{display: block; text-align: center;
 
 margin-right:20px}
 
 
-}
+
 
 .img-thumbnail {
   padding: 0.25rem;

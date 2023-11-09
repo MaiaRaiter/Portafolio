@@ -90,11 +90,19 @@
     scroll-behavior: smooth;
   }
 }
+.contenedor {
+  display: flex;
+  align-items: center;
+}
+
+
 .img2 {
   width: 523px;
   height: 437px;
-  margin-right:800px;
- }
+  /* Puedes ajustar el margin-right según tus necesidades */
+  margin-left: 300px;
+  border-radius: 90%;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -116,10 +124,11 @@ hr {
   opacity: 0.25;
 }
 .FondoGris{
- background-color: rgba(90, 86, 86, 0.507);
+ background-color: rgba(78, 15, 224, 0.699);
  height: 200px;
- width: auto;
+ width: 90%;
  padding: 97px;
+ color: white;
  
 
 }
@@ -1765,6 +1774,19 @@ progress {
   vertical-align: top;
   border-color: var(--bs-table-border-color);
 }
+.Columnas{
+ 
+  margin-right: 10px;
+  margin-top: 15px;
+
+  }
+  .Columnas2{
+  
+    margin-top: 15px;
+    margin-right: 60px;
+ 
+
+  }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
@@ -1777,7 +1799,12 @@ progress {
 .table > thead {
   vertical-align: bottom;
 }
+.TablaInfo{
+  width: 30%;
+ margin-left: 100px;
 
+
+}
 .table-group-divider {
   border-top: 2px solid currentcolor;
 }
