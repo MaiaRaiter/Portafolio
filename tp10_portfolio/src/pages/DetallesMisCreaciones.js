@@ -9,6 +9,8 @@ import { CancionesContext } from '../context/CancionesContext';
 export default function DetallesMisCreaciones(props) {
   const { EliminarFavorito }= useContext(FavoritosContext);
   const { AddFavorito }= useContext(FavoritosContext);
+  const { favoritos }= useContext(FavoritosContext);
+
   const {id} = useParams();
   const [creation, setCreation] = useState(null);
   const { canciones } = useContext(CancionesContext)
@@ -20,6 +22,7 @@ export default function DetallesMisCreaciones(props) {
   useEffect(() => {
     CargarCreacion();
   }, [id,canciones]);
+
 
 
 
@@ -45,8 +48,12 @@ return (
 </div> </center>
 
 <button type="button" className="btn btn-primary btn-lg Columnas" onClick={() => AddFavorito(creation)}> Agregar a favoritos</button>
-      <button type="button" className="btn btn-secondary btn-lg Columnas2"  onClick={() => EliminarFavorito(creation.id)}>Quitar de favoritos </button>
 
+{favoritos[0].id === id && (
+            <button type="button" className="btn btn-secondary btn-lg Columnas2" onClick={() => EliminarFavorito(creation.id)}>
+              Quitar de favoritos
+            </button>
+          )}
       </div>  
     )
   }
