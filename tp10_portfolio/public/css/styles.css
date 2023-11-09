@@ -97,11 +97,11 @@
 
 
 .img2 {
-  width: 523px;
-  height: 437px;
-  /* Puedes ajustar el margin-right según tus necesidades */
-  margin-left: 300px;
+  width: 500px;
+  height: 450px;
+  margin-left: 100px;
   border-radius: 90%;
+
 }
 body {
   margin: 0;
@@ -124,12 +124,12 @@ hr {
   opacity: 0.25;
 }
 .FondoGris{
- background-color: rgba(78, 15, 224, 0.699);
+ background-color: var(--bs-gray-400) ;
  height: 200px;
  width: 90%;
- padding: 97px;
- color: white;
- 
+ padding: 80px;
+ color: black;
+ border-radius: 30px;
 
 }
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -1800,7 +1800,7 @@ progress {
   vertical-align: bottom;
 }
 .TablaInfo{
-  width: 30%;
+  width: 50%;
  margin-left: 100px;
 
 
@@ -2883,36 +2883,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1e30f3;
-  --bs-btn-border-color: #1e30f3;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a29cf;
   --bs-btn-hover-border-color: #1826c2;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1826c2;
-  --bs-btn-active-border-color: #1724b6;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1e30f3;
   --bs-btn-disabled-border-color: #1e30f3;
 }
 
 .btn-secondary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #e21e80;
-  --bs-btn-border-color: #e21e80;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #e64093;
   --bs-btn-hover-border-color: #e5358d;
   --bs-btn-focus-shadow-rgb: 192, 26, 109;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #e84b99;
-  --bs-btn-active-border-color: #e5358d;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #e21e80;
-  --bs-btn-disabled-border-color: #e21e80;
+
 }
 
 .btn-success {
@@ -6699,7 +6682,7 @@ textarea.form-control-lg {
 
 .text-bg-secondary {
   color: #000 !important;
-  background-color: RGBA(226, 30, 128, var(--bs-bg-opacity, 1)) !important;
+  background-color: var(--bs-gray-500)
 }
 
 .text-bg-success {
@@ -11786,4 +11769,13 @@ html {
   display: flex;
   margin-top: 16px
 
+}
+
+.botonFav{
+  color:#000;
+  background-color: white;
+}
+
+.botonDelete{
+  background-color: red;
 }

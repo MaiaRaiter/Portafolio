@@ -7,24 +7,26 @@ import { useParams } from 'react-router-dom';
 import { CancionesContext } from '../context/CancionesContext';
 
 export default function DetallesMisCreaciones(props) {
+
   const { EliminarFavorito }= useContext(FavoritosContext);
   const { AddFavorito }= useContext(FavoritosContext);
   const { favoritos }= useContext(FavoritosContext);
 
   const {id} = useParams();
+
+
   const [creation, setCreation] = useState(null);
   const { canciones } = useContext(CancionesContext)
   const CargarCreacion = () => {
-    const filtro = canciones.filter(data=>data.id==id);
-    if(filtro.length>0)
-      setCreation(filtro[0]);    
+    const filtro = canciones.filter(data => data.id == id);
+    if (filtro.length > 0)
+      setCreation(filtro[0]);
   }
   useEffect(() => {
     CargarCreacion();
-  }, [id,canciones]);
+  }, [id, canciones]);
 
-
-
+  
 
 return (
   <>
@@ -73,6 +75,7 @@ return (
 
   
   </>
-)
+)}
 
-}
+
+      
