@@ -97,11 +97,11 @@
 
 
 .img2 {
-  width: 523px;
-  height: 437px;
-  /* Puedes ajustar el margin-right según tus necesidades */
-  margin-left: 300px;
+  width: 500px;
+  height: 450px;
+  margin-left: 100px;
   border-radius: 90%;
+
 }
 body {
   margin: 0;
@@ -124,12 +124,12 @@ hr {
   opacity: 0.25;
 }
 .FondoGris{
- background-color: rgba(78, 15, 224, 0.699);
+ background-color: var(--bs-gray-400) ;
  height: 200px;
  width: 90%;
- padding: 97px;
- color: white;
- 
+ padding: 80px;
+ color: black;
+ border-radius: 30px;
 
 }
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -1800,7 +1800,7 @@ progress {
   vertical-align: bottom;
 }
 .TablaInfo{
-  width: 30%;
+  width: 50%;
  margin-left: 100px;
 
 
