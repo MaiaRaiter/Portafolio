@@ -42,8 +42,8 @@ export default function DetallesMisCreaciones(props) {
             <p >{creation.informacion}</p>
           </div> </center>
 
-          <button type="button" className="btn btn-primary btn-lg Columnas" onClick={() => AddFavorito(creation)}> Agregar a favoritos</button>
-          <button type="button" className="btn btn-secondary btn-lg Columnas2" onClick={() => EliminarFavorito(creation.id)}>Quitar de favoritos </button>
+          <button type="button" className="btn btn-primary btn-lg Columnas botonFav" onClick={() => AddFavorito(creation)}> Agregar a favoritos</button>
+          <button type="button" className="btn btn-secondary btn-lg Columnas2 botonDelete" onClick={() => EliminarFavorito(creation.id)}>Quitar de favoritos </button>
 
         </div>
       )
