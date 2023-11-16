@@ -1,5 +1,3 @@
-//Deben crear un componente de Contacto, el cual deberá estar ubicado en el footer. Usen un form de bootstrap, pero si quieren algo más pueden usar https://formik.org/ o https://react-hook-form.com/get-started . Tambien, agregar info a las redes sociales que desen como su perfil de LinkedIn.
-
 import React from 'react'
 
 export default function Contacto () {

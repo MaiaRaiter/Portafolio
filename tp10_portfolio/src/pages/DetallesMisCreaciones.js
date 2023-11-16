@@ -6,17 +6,13 @@ import { FavoritosContext } from '../context/FavoritosContext'
 import { useParams } from 'react-router-dom';
 import { CancionesContext } from '../context/CancionesContext';
 
-export default function DetallesMisCreaciones(props) {
+export default function DetallesMisCreaciones() {
 
-  const { EliminarFavorito }= useContext(FavoritosContext);
-  const { AddFavorito }= useContext(FavoritosContext);
-  const { favoritos }= useContext(FavoritosContext);
-
-  const {id} = useParams();
-
-
+  const { EliminarFavorito, AddFavorito, isFavorite } = useContext(FavoritosContext);  
+  const { id } = useParams();
   const [creation, setCreation] = useState(null);
-  const { canciones } = useContext(CancionesContext)
+  const { canciones } = useContext(CancionesContext);
+
   const CargarCreacion = () => {
     const filtro = canciones.filter(data => data.id == id);
     if (filtro.length > 0)
@@ -26,56 +22,39 @@ export default function DetallesMisCreaciones(props) {
     CargarCreacion();
   }, [id, canciones]);
 
-  
+  return (
+    <>
+      {!creation ? (
+        <div>loading</div>) : (
+        <div className="text-center mb-5">
+          <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">{creation.titulo}</span></h1>
+          <div className="contenedor">
+            <img className="img2" src={creation.imagenes} alt="" />
+            <ul className="list-group TablaInfo">
+              <li className="list-group-item">Fecha:{creation.fecha}</li>
+              <li className="list-group-item">Género:{creation.genero}</li>
+              <li className="list-group-item">Detalles:{creation.detalles}</li>
+            </ul>
+          </div>
 
-return (
-  <>
-  {!creation ? (
-    <div>loading</div>) : (
-      <div className="text-center mb-5">
-        <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">{creation.titulo}</span></h1>
-        <div className="contenedor">
-  <img className="img2" src={creation.imagenes} alt=""/>
-  <ul className="list-group TablaInfo">
-    <li className="list-group-item">Fecha:{creation.fecha}</li>
-    <li className="list-group-item">Género:{creation.genero}</li>
-    <li className="list-group-item">Detalles:{creation.detalles}</li>
-  </ul>
-</div>
+          <br></br>
+          <br></br>
+          <center>< div className='FondoGris'>
+            <p >{creation.informacion}</p>
+          </div> </center>
 
-        <br></br> 
-        <br></br>
-        <center>< div className='FondoGris'> 
-<p >{creation.informacion}</p>
-</div> </center>
+          {isFavorite(creation.id) ? (
+              <button className='btn-secondary' onClick={() => EliminarFavorito(creation.id)}>Eliminar Favorito</button>
+            ):(
+              <button className='btn-primary' onClick={() => AddFavorito(creation)}>Agregar Fvorito</button>
+            )}   
 
-<button type="button" className="btn btn-primary btn-lg Columnas" onClick={() => AddFavorito(creation)}> Agregar a favoritos</button>
+        </div>
+      )
+      }
 
-{favoritos[0].id === id && (
-            <button type="button" className="btn btn-secondary btn-lg Columnas2" onClick={() => EliminarFavorito(creation.id)}>
-              Quitar de favoritos
-            </button>
-          )}
-      </div>  
-    )
-  }
-
-
-
+    </>
+  )
+}
 
 
-
-
-
-
-
-
-
-
-
-  
-  </>
-)}
-
-
-      

@@ -4,8 +4,6 @@ import { RxInstagramLogo } from "react-icons/rx";
 import { RxTwitterLogo } from "react-icons/rx";
 import { RxLinkedinLogo } from "react-icons/rx";
 
-
-
 export default function Footer() {
   return (
     <footer>

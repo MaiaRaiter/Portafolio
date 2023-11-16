@@ -130,7 +130,6 @@ hr {
  padding: 80px;
  color: black;
  border-radius: 30px;
-
 }
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
@@ -2882,7 +2881,6 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
   --bs-btn-hover-border-color: #1826c2;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
@@ -5877,6 +5875,13 @@ textarea.form-control-lg {
   .carousel-fade .active.carousel-item-end {
     transition: none;
   }
+}
+.icon-heart {
+ 
+}
+.icon-heart-solid {
+  fill: red; /* Change the color to your desired color */
+  /* Add any other styles you want for the solid heart icon */
 }
 
 .carousel-control-prev,

@@ -1,10 +1,8 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import CardFavoritos from '../components/CardFavoritos';
 import { FavoritosContext } from '../context/FavoritosContext'
 
 export default function Favoritos() {
-
-  const [post, setPost] = useState([]);
   const {favoritos}= useContext(FavoritosContext);
   return (
     <div className="container px-5 mb-5">
@@ -21,21 +19,3 @@ export default function Favoritos() {
     </div>
   )
 }
-
-/*
- {carrito.map((product, index) => (
-                <div key={index}>
-                <tr >
-                <th scope="row" >{index+1}</th>
-                <th scope="col">
-                <td><img src={product.thumbnail} className="ImagenTabla"></img></td>
-                </th>
-                
-                <td>{product.title}</td>
-                <td>${product.price}</td>
-                </tr>
-                <td>
-                  <p> <div  className="main-border-button"><button onClick={() => EliminarProduct(product.id)} className="btn btn-danger">Eliminar Producto</button></div></p>
-                </td>
-                </div>
-      ))}*/

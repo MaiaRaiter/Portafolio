@@ -1,26 +1,24 @@
-//Que los favoritos se puedan guardar en localStorage, para el caso que al cliente cierra y vuelve a abrir seguir teniendo lo agregado al mismo.
-//Poder ver, en el navbar sobre el icono de favoritos, ver con un Badge la cantidad de creaciones agregadas, ej: https://mui.com/material-ui/react-badge/, a traves de React Context.
 import React, { createContext, useState, useEffect } from 'react'
 
 export const FavoritosContext = createContext();
 
 const FavoritosProvider = (props) => {
-
-  const [favoritos, setFavoritos] = useState([]);
-    const cantidadFavoritos = favoritos.length
-    useEffect(() => {
-        
-      if (localStorage.getItem("favoritos") != null) {
-        let storage = localStorage.getItem("favoritos")
-        setFavoritos(JSON.parse(storage))
-      }
-      },[])
+    const inicial = localStorage.getItem("favoritos") != null ? JSON.parse(localStorage.getItem("favoritos")) : [];
+    const [favoritos, setFavoritos] = useState(inicial);
+    const [cantidadFavoritos, setCantidadFavoritos] = useState(0);    
 
     const AddFavorito = (fav) => {
-     setFavoritos([...favoritos, fav])
-     console.log(fav);
-     localStorage.setItem("favoritos", JSON.stringify([...favoritos, fav]))
+      if (!favoritos.some((item) => item.id === fav.id)) {
+        setFavoritos([...favoritos, fav]);        
+      } else {
+        console.log("Item already in favorites");
+      }
     }
+    
+    useEffect(()=>{
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
+      setCantidadFavoritos(favoritos.length);
+    },[favoritos])
     
     const ResetFavoritos = () => {
       setFavoritos([])
@@ -31,6 +29,11 @@ const FavoritosProvider = (props) => {
         favoritos.filter((fav) => fav.id !== favoritoid)
       ); 
     };
+
+    const isFavorite = (id)=>{            
+      let filtro = favoritos.filter(x=>x.id===id);      
+      return filtro.length >0;
+    }
     
   return (
     <FavoritosContext.Provider
@@ -39,7 +42,8 @@ const FavoritosProvider = (props) => {
       cantidadFavoritos,
       AddFavorito,
       ResetFavoritos,
-      EliminarFavorito
+      EliminarFavorito,
+      isFavorite
     }}
   >
     {props.children}

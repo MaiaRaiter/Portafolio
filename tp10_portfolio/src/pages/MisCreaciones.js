@@ -23,7 +23,7 @@ export default function MisCreaciones() {
   return (
     <div className="container px-5 mb-5">
     <div className="text-center mb-5">
-      <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">Mis Creaciones</span></h1>
+      <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">Creaciones</span></h1>
     </div>
     <div className="row gx-5 justify-content-center">
       <div className="col-lg-11 col-xl-9 col-xxl-8">
